@@ -1,0 +1,26 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.2",
+    "uuidv1": "^1.6.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmcginley81/note-taker-express.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/mmcginley81/note-taker-express/issues"
+  },
+  "homepage": "https://github.com/mmcginley81/note-taker-express#readme",
+  "description": ""
+}
