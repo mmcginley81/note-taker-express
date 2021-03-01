@@ -15,5 +15,5 @@ router.get('*', (req, res) => {
 
 
 
-/////////////////////////// Exporting files /////////////////////////////
+// Export
 module.exports = router;

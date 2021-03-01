@@ -3,7 +3,7 @@ const router = require("express").Router();
 const db = require('../db/db.json');
 const fs = require('fs');
 
-//UUID
+//UUID couldn't get npm package UUID to work
 
 
 // Fuctions to get, create, and delete notes
@@ -27,16 +27,18 @@ router.post('/notes', (req, res) =>{
 // delete api/notes
 router.delete('/notes/:id', (req, res) =>{
 
-    const id = req.params.id 
-    console.log(id)
+    
+    const id = Number(req.params.id) 
+
     // use the filter method on the db array to remove the object that matches the id
-    db.filter((note) => {
-        return note.id !== note.id
+    let newDb = db.filter((note) => {
+        return note.id !== id
     })
-    console.log(db)
-    fs.writeFileSync('db/db.json', JSON.stringify(db))
-    res.json(db)
+    console.log(newDb)
+    fs.writeFileSync('db/db.json', JSON.stringify(newDb))
+    res.json(newDb)
+
 })
 
-
+// Export
 module.exports = router
