@@ -2,6 +2,8 @@
 
 <img width="929" alt="Note express screenshot" src="https://user-images.githubusercontent.com/75404915/109459830-68bbba00-7a14-11eb-866e-d449e5a50080.PNG">
 
+Link to deployed application: https://aqueous-lowlands-11005.herokuapp.com/
+
 Link to video of application running: https://www.youtube.com/watch?v=8_-v0yKS75U
 
 This application uses Express.js to set up local servers to create a note taking application so that users will be able to save their notes in a lightweight application.
